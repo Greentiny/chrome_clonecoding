@@ -1,0 +1,28 @@
+body {
+    
+    background-image: url("1.jpg"), url("2.jpg"), url("3.jpg"),url("4.jpg");
+    background-size: cover, cover, cover, cover; /* 모든 이미지 비율 유지하면서 꽉 차게 */
+    background-position: center, center, center, center; /* 중앙 정렬 */
+    
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 (필요한 경우) */
+    height: 100vh; /* 화면 높이 꽉 채우기 */
+}
+.container{
+    width: 600px;
+    height: 500px;
+    text-align: center;
+   
+}
+.hidden{
+    display: none;
+}
+#clock{
+    align-items: center;
+    font-weight: bold;
+    font-size: 100px;
+    color: whitesmoke;
+    font-family:sans-serif;
+    margin: 0;
+}
