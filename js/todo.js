@@ -14,20 +14,27 @@ function deleteToDo(event){
 
 }
 
-function paintTodo(newTodo){
-    const li=document.createElement("li");
-    li.id=newTodo.id;
-    const span=document.createElement("span");
-    span.innerText=newTodo.text;
-    const button=document.createElement("button");
-    button.innerText="X";
-    button.addEventListener("click",deleteToDo);
+function paintTodo(newTodo) {
+    const li = document.createElement("li");
+    li.id = newTodo.id;
+  
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.style.marginRight = "10px";
+  
+    const span = document.createElement("span");
+    span.innerText = newTodo.text;
+  
+    const button = document.createElement("button");
+    button.innerText = "X";
+    button.addEventListener("click", deleteToDo);
+  
+    li.appendChild(checkbox);
     li.appendChild(span);
     li.appendChild(button);
-   
     toDoList.appendChild(li);
-
-}
+  }
+  
 function handleToDoSubmit(event){
     event.preventDefault();
     const newTodo=toDoInput.value;
