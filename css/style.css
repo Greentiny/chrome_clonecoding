@@ -64,7 +64,7 @@ body {
     border-bottom: 2px solid white;
     padding: 10px;
     font-size: 18px;
-    width: 300px;
+    width: 200px;
     color: white;
     text-align: center;
     outline: none;
@@ -193,6 +193,15 @@ body {
       width: 65%;
       height: 225px; /* ✅ 모바일에서는 조금 줄이기 */
     }
+    #todo-form input {
+      font-size: 14px;
+      width: 150px;
+      color: white;
+      text-align: center;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+    
   
     #quote {
       bottom: 5px;
